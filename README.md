@@ -1,17 +1,7 @@
-# docker_installer_sh
-Docker and Docker-Compose install scripts for various linux distros and versions
+### Just install Docker
 
+` curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh`
 
+### Install Docker and Portainer
 
-
-Take the raw page : 
-
-curl -O https://raw.githubusercontent.com/UserCr4ig/docker_installer_sh/main/docker_installer.sh
-
-
-
-chmod +xr docker_installer.sh
-
-
-
-./docker_installer.sh
+` curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh && sudo docker run docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest`
