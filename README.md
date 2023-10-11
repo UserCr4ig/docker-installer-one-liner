@@ -9,4 +9,4 @@
 
   #### And add the best template for Portainer.
   
-https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates.json
+`https://raw.githubusercontent.com/Lissy93/portainer-templates/main/templates.json`
